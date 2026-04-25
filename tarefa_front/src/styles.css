@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
+
+body {
+margin: 0;
+  padding: 0;
+  font-family: 'Sniglet', sans-serif;
+  /* Um bege "creme" bem suave */
+  background-color: #f7eed2; 
+  color: #613a31;
+}

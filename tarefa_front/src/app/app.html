@@ -1,0 +1,38 @@
+<div class="container">
+  <h1 class="titulo-principal">{{ tituloPagina }}</h1>
+  <p class="subtitulo">Gerenciamento de tarefas pra facilitar nossa vida</p>
+  
+  <hr class="divisor">
+
+  <div class="formulario-cadastro">
+  <input type="text" [(ngModel)]="novaTarefa.titulo" placeholder="Título da nova tarefa">
+  <input type="text" [(ngModel)]="novaTarefa.descricao" placeholder="Descrição">
+  <button (click)="salvarTarefa()">Adicionar tarefa</button>
+  </div>
+
+  <table class="tabela-tarefas">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Descrição</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of listaTarefas">
+        <td class="coluna-id">{{ t.id }}</td>
+        <td class="coluna-titulo">{{ t.titulo }}</td>
+        <td>{{ t.descricao }}</td>
+        <td>
+          <span class="badge-status">{{ t.status }}</span>
+
+          <button *ngIf="t.status !== 'Concluída'" (click)="concluirTarefa(t)" style="margin-left: 10px; cursor: pointer;">
+            ✓
+          </button>
+          <button (click)="excluirTarefa(t.id!)"> 🗑️ </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
