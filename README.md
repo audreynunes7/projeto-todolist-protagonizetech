@@ -2,10 +2,19 @@
 
 Projeto desenvolvido para o Bootcamp Avanade + Impacta - Protagonize Tech.
 
-##  Tecnologias Utilizadas
+### ✅ Requisitos Obrigatórios
+- [x] **CRUD Completo:** Funcionamento correto das operações de criar, ler, atualizar e deletar tarefas.
+- [x] **Integração Full Stack:** Comunicação fluida entre o Front-end (Angular) e a API (.NET).
+- [x] **Protocolo HTTP:** Uso correto dos métodos **GET, POST, PUT e DELETE**.
+- [x] **Execução:** Projeto configurado para compilar e rodar corretamente.
+- [x] **Organização:** Código estruturado de forma lógica e clara.
+
+##  Tecnologias Utilizadas (obrigatórias)
 - **Front-end:** Angular (TypeScript)
-- **Back-end:** .NET Core / Web API (C#)
-- **Banco de Dados:** SQL Server
+* **Back-end:** ASP.NET Core Web API (C#)
+* **Banco de Dados:** SQL Server
+* **ORM:** Entity Framework Core
+* **Comunicação:** API REST (JSON)
 
 ##  Como Executar o Projeto
 
